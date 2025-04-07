@@ -21,4 +21,22 @@ while (a < goal) and (b < goal):
     print("a:" +">" * a + "@")
     print("b:" +">" * b + "@")
 
+    time.sleep(1)
+
 #勝者判定
+
+if a == b:
+    winner = "同時"
+
+elif a>b:
+    winner = "a"
+
+elif a<b:
+    winner = "b"
+
+#予想が当たったか？
+if winner == user:
+    print("正解！！")
+
+else:
+    print("残念")

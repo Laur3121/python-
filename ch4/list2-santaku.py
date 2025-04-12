@@ -12,3 +12,25 @@ quiz_list = [
 random.shuffle(quiz_list)
 
 
+for quiz in quiz_list:
+    print(["問題"])
+    print(quiz[0])
+
+    for i in range(3):
+        no = i+1
+        print(str(no) + ":" + quiz[no])
+
+    user = int(input("答えは？"))
+    ans = quiz[4]
+
+    if user == ans:
+        print("正解")
+
+    else:
+        print("はずれ....答えは"+ quiz[ans]) 
+
+    print("---")
+
+
+
+
